@@ -50,18 +50,12 @@
                                                             backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
                                                  backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
     
-    DCPathItemButton *itemButton_5 = [[DCPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-sleep"]
-                                                           highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-sleep-highlighted"]
-                                                            backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]
-                                                 backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
-    
     // Add the item button into the center button
     //
     [dcPathButton addPathItems:@[itemButton_1,
                                  itemButton_2,
                                  itemButton_3,
-                                 itemButton_4,
-                                 itemButton_5
+                                 itemButton_4
                                  ]];
     
     // Change the bloom radius, default is 105.0f
@@ -80,7 +74,7 @@
     dcPathButton.bottomViewColor = [UIColor grayColor];
     
     dcPathButton.bloomDirection = kDCPathButtonBloomDirectionTopRight;
-    dcPathButton.dcButtonCenter = CGPointMake(10 + dcPathButton.frame.size.width/2, self.view.frame.size.height - dcPathButton.frame.size.height/2 - 10);
+    dcPathButton.dcButtonCenter = CGPointMake(20 + dcPathButton.frame.size.width/2, self.view.frame.size.height - dcPathButton.frame.size.height/2 - 20);
     
     [self.view addSubview:dcPathButton];
     
@@ -89,7 +83,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (void)pathButton:(DCPathButton *)dcPathButton clickItemButtonAtIndex:(NSUInteger)itemButtonIndex {
     

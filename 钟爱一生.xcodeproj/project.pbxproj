@@ -72,6 +72,10 @@
 		793D97181BE0F3D4004C6DA5 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D96DD1BE0F3D4004C6DA5 /* UIImageView+WebCache.m */; };
 		793D97191BE0F3D4004C6DA5 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D96DF1BE0F3D4004C6DA5 /* UIView+WebCacheOperation.m */; };
 		793D971A1BE0F3D4004C6DA5 /* UIColor+AddColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D96E21BE0F3D4004C6DA5 /* UIColor+AddColor.m */; };
+		793D971D1BE0FA9B004C6DA5 /* MagazineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D971C1BE0FA9B004C6DA5 /* MagazineViewController.m */; };
+		793D97201BE0FC0C004C6DA5 /* MagazineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D971F1BE0FC0C004C6DA5 /* MagazineModel.m */; };
+		793D97231BE0FC40004C6DA5 /* MagazineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D97221BE0FC40004C6DA5 /* MagazineView.m */; };
+		793D97261BE0FC96004C6DA5 /* MagazineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D97251BE0FC96004C6DA5 /* MagazineCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +190,14 @@
 		793D96DF1BE0F3D4004C6DA5 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		793D96E11BE0F3D4004C6DA5 /* UIColor+AddColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AddColor.h"; sourceTree = "<group>"; };
 		793D96E21BE0F3D4004C6DA5 /* UIColor+AddColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AddColor.m"; sourceTree = "<group>"; };
+		793D971B1BE0FA9B004C6DA5 /* MagazineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagazineViewController.h; path = "钟爱一生/WatchMagazine/C/MagazineViewController.h"; sourceTree = SOURCE_ROOT; };
+		793D971C1BE0FA9B004C6DA5 /* MagazineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagazineViewController.m; path = "钟爱一生/WatchMagazine/C/MagazineViewController.m"; sourceTree = SOURCE_ROOT; };
+		793D971E1BE0FC0C004C6DA5 /* MagazineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagazineModel.h; path = "钟爱一生/WatchMagazine/M/MagazineModel.h"; sourceTree = SOURCE_ROOT; };
+		793D971F1BE0FC0C004C6DA5 /* MagazineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagazineModel.m; path = "钟爱一生/WatchMagazine/M/MagazineModel.m"; sourceTree = SOURCE_ROOT; };
+		793D97211BE0FC40004C6DA5 /* MagazineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagazineView.h; path = "钟爱一生/WatchMagazine/V/MagazineView.h"; sourceTree = SOURCE_ROOT; };
+		793D97221BE0FC40004C6DA5 /* MagazineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagazineView.m; path = "钟爱一生/WatchMagazine/V/MagazineView.m"; sourceTree = SOURCE_ROOT; };
+		793D97241BE0FC96004C6DA5 /* MagazineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagazineCell.h; path = "钟爱一生/WatchMagazine/V/MagazineCell.h"; sourceTree = SOURCE_ROOT; };
+		793D97251BE0FC96004C6DA5 /* MagazineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagazineCell.m; path = "钟爱一生/WatchMagazine/V/MagazineCell.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,7 +253,7 @@
 				793D946B1BE0B657004C6DA5 /* AppDelegate.m */,
 				793D95A31BE0DB15004C6DA5 /* MainViewController.h */,
 				793D95A41BE0DB15004C6DA5 /* MainViewController.m */,
-				793D95A71BE0DF78004C6DA5 /* AllWatch */,
+				793D95A71BE0DF78004C6DA5 /* WatchMagazine */,
 				793D95AB1BE0DF87004C6DA5 /* BrandWIKI */,
 				793D95AF1BE0DF87004C6DA5 /* WatchVideo */,
 				793D94701BE0B657004C6DA5 /* Main.storyboard */,
@@ -280,19 +292,22 @@
 			path = "钟爱一生UITests";
 			sourceTree = "<group>";
 		};
-		793D95A71BE0DF78004C6DA5 /* AllWatch */ = {
+		793D95A71BE0DF78004C6DA5 /* WatchMagazine */ = {
 			isa = PBXGroup;
 			children = (
 				793D95A81BE0DF78004C6DA5 /* C */,
 				793D95A91BE0DF78004C6DA5 /* M */,
 				793D95AA1BE0DF78004C6DA5 /* V */,
 			);
+			name = WatchMagazine;
 			path = AllWatch;
 			sourceTree = "<group>";
 		};
 		793D95A81BE0DF78004C6DA5 /* C */ = {
 			isa = PBXGroup;
 			children = (
+				793D971B1BE0FA9B004C6DA5 /* MagazineViewController.h */,
+				793D971C1BE0FA9B004C6DA5 /* MagazineViewController.m */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -300,6 +315,8 @@
 		793D95A91BE0DF78004C6DA5 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				793D971E1BE0FC0C004C6DA5 /* MagazineModel.h */,
+				793D971F1BE0FC0C004C6DA5 /* MagazineModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -307,6 +324,10 @@
 		793D95AA1BE0DF78004C6DA5 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				793D97211BE0FC40004C6DA5 /* MagazineView.h */,
+				793D97221BE0FC40004C6DA5 /* MagazineView.m */,
+				793D97241BE0FC96004C6DA5 /* MagazineCell.h */,
+				793D97251BE0FC96004C6DA5 /* MagazineCell.m */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -675,6 +696,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				793D97181BE0F3D4004C6DA5 /* UIImageView+WebCache.m in Sources */,
+				793D97201BE0FC0C004C6DA5 /* MagazineModel.m in Sources */,
 				793D97141BE0F3D4004C6DA5 /* UIImage+GIF.m in Sources */,
 				793D970D1BE0F3D4004C6DA5 /* SDWebImageCompat.m in Sources */,
 				793D97131BE0F3D4004C6DA5 /* UIButton+WebCache.m in Sources */,
@@ -686,6 +708,8 @@
 				793D970A1BE0F3D4004C6DA5 /* MKAnnotationView+WebCache.m in Sources */,
 				793D97161BE0F3D4004C6DA5 /* UIImage+WebP.m in Sources */,
 				793D946C1BE0B657004C6DA5 /* AppDelegate.m in Sources */,
+				793D97261BE0FC96004C6DA5 /* MagazineCell.m in Sources */,
+				793D971D1BE0FA9B004C6DA5 /* MagazineViewController.m in Sources */,
 				793D97101BE0F3D4004C6DA5 /* SDWebImageDownloaderOperation.m in Sources */,
 				793D970E1BE0F3D4004C6DA5 /* SDWebImageDecoder.m in Sources */,
 				793D94691BE0B657004C6DA5 /* main.m in Sources */,
@@ -698,6 +722,7 @@
 				793D97111BE0F3D4004C6DA5 /* SDWebImageManager.m in Sources */,
 				793D97091BE0F3D4004C6DA5 /* NetHandler.m in Sources */,
 				793D970C1BE0F3D4004C6DA5 /* SDImageCache.m in Sources */,
+				793D97231BE0FC40004C6DA5 /* MagazineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
